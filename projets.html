@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Pablo MAMBIR-BALDEO : A propos</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/projet_minia.css" />
+    <script src="JS/script.js"></script>
+    <style>
+        section {
+            flex-direction: column;
+        }
+        @media  screen and (min-width:1280px) {
+            section {
+                margin: 100px;
+            }
+        }
+    </style>    
+</head>
+<body onload="init()">
+    <!--Header-->
+    <header>
+        <a href="index.html" id="logo">Logo</a>
+        <nav id="menu">
+            <a href="Apropos.html" class="BTN">A propos</a>
+            <a href="projets.html" class="BTN">Mes projets</a>
+        </nav>
+        <a href="#menu" id="open" class="BTN_Menu">
+            <img src="" alt="Ouvrir menu">
+        </a>
+        <a href="#" id="close" class="BTN_Menu">
+           <img src="" alt="Fermer menu">
+        </a>
+    </header>
+
+    <main>
+        <h1>Mes projets</h1>
+        <section id="pageProjets">
+            <div id="selection">
+                <button cat="*">Tous</button>
+                <button cat="Draw">Graphisme</button>
+                <button cat="3D">3D</button>
+                <button cat="Cam">Audiovisuel</button>
+                <button cat="Dev">Développement</button>
+            </div>
+            <div id="conteneur-projet">
+                <article class="projet" cat="Dev Draw">
+                    <a href="projets/portfolio.html">
+                        <img src="Images/portfolio.jpg" alt="Screenshot de mon portfolio"/>
+                        <h3>Réalisations de mon portfolio</h3>
+                        <p>2024</p>
+                    </a>
+                </article>
+                <article class="projet" cat="Dev Draw">
+                    <a href="projets/portfolio.html">
+                        <img src="Images/Bloodhound.jpg" alt="Un de mes dessins"/>
+                        <h3>Carnet de croquis</h3>
+                        <p>2023-2025</p>
+                    </a>
+                </article>
+                <!--(article.projet[cat=""]>a[href="projets/"]>img[src="Images/"][alt=""]+h3+p)*13-->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div id="lien">
+            <a href="Apropos.html#contact">Contact</a>
+            <a href="legale.html">Mentions légales</a>
+        </div>
+        <div id="position">
+            <div id="socials">
+                <a href="mailto:pablo.mambir@outlook.fr">
+                    <img src="" alt="Lien mail"/>
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-mambir-bald%C3%A9o-7ab207302?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbZ7GnDC3SHGSmbEJ1v1w2Q%3D%3D">
+                    <img src="" alt="Lien LinkedIn"/>
+                </a>
+            </div>
+            <p><span>Copyright </span>© 2024-2025 MAMBIR-BALDEO Pablo</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
