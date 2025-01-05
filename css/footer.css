@@ -61,7 +61,7 @@ footer span {
 
 
 /*PC*/
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1250px) {
     footer {
         height: 223px;
     }
