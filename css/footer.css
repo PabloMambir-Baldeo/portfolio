@@ -55,16 +55,8 @@ padding-top:12px ;
     line-height: normal;
     }
 
-footer span {
-    display: none;
-}
-
-
 /*PC*/
 @media screen and (min-width:1250px) {
-    footer {
-        height: 223px;
-    }
     footer span {
         display: inline;
     }
@@ -87,5 +79,9 @@ footer span {
     #socials {
         width: 50%;
         justify-content: flex-end;
+    }
+     footer p::before {
+        content:"Copyright ";
+        font-family: "Mouldy Cheese";
     }
 }

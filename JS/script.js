@@ -6,6 +6,8 @@ function init()
     const projets = document.querySelectorAll(".projet");
     console.log(projets);
 
+    conteneur = document.querySelector("#conteneur-projet");
+    
     compteur = 0;
     
     //On vérifie chaque projet pour voir lequel on affiche
@@ -37,19 +39,24 @@ function init()
         switch(filtre)
         {
             case "Draw" :
-                var Taille = [[4,4],[2,4],[3,4]];
+                var Taille = [[2,5],[4,7],[3,5],[3,7],[2,5],[4,4],[2,4],[4,4],[2,4]];
+                conteneur.style.gridTemplateRows = "repeat(11, 1fr)";
                 break;
             case "3D" :
                 var Taille = [[3,7]];
+                //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
                 break;
             case "Dev" :
                 var Taille = [[3,7]];
+                //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
                 break;
             case "Cam" :
                 var Taille = [[3,7]];
+                //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
                 break;
             default :
-                var Taille = [[2,4],[4,4],[3,4],[4,4],[3,4],[4,4],[2,4],[4,4],[4,4],[6,4],[3,4],[4,7],[4,5]];
+                var Taille = [[2,4],[4,4],[3,4],[4,4],[3,4],[4,4],[2,4],[4,4],[4,4],[6,4],[3,4],[3,4],[2,4]];
+                conteneur.style.gridTemplateRows="repeat(15, 1fr)";
         }
         console.log(Taille);
         Selected.forEach((projet,index) =>
