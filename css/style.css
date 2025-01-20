@@ -140,6 +140,12 @@ button {
     font-family: "Publica Play";
 }
 
+#minia_Projets {
+    display: flex;
+    gap: 20px;
+    margin: 0 100px;
+}
+
 #conteneur-projet {
     margin: 0;
     display: flex;
