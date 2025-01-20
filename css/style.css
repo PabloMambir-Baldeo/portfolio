@@ -142,6 +142,7 @@ button {
 
 #minia_Projets {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: 0 100px;
 }
@@ -235,5 +236,9 @@ a:hover {
 
     #selection {
         justify-content: space-between;
+    }
+
+    #minia_Projets {
+        flex-direction:row ;
     }
 }
