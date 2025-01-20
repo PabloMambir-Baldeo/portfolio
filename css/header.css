@@ -13,7 +13,9 @@ header {
 header .BTN {
     background-color: transparent;
 }
-
+a#open,a#close {
+    width: 60px;
+}
 /*Menu Hamburger*/
 /*Menu fermé*/
 #menu {
@@ -47,6 +49,7 @@ header .BTN {
 }
 #menu:target~a#open {
     display: none;
+
 }
 
 /*PC*/
