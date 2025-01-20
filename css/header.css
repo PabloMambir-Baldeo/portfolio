@@ -36,7 +36,7 @@ header .BTN {
 /*Menu ouvert*/
 #menu:target {
     display: flex;
-    background-color: grey;
+    background-color: #FFBE63;
 }
 #menu:target~a#close {
     display: flex;
