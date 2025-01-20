@@ -1,7 +1,9 @@
 .projet {
     width:100%;
     position:relative;
-    }
+    border-radius:15px;
+    background-color: #ff9c10ce;
+}
     
     .projet img {
     width:100%;
@@ -15,6 +17,8 @@
     position:absolute;
     left:0;
     right:0;
+    opacity: 0;
+    color: black;
     }
     
     .projet h3 {
@@ -28,6 +32,10 @@
     font-family:"Publica Play";
     font-size:33px;
     margin:5px 15px;
+    }
+
+    .projet:hover h3,.projet:hover p {
+        opacity:100%;
     }
     
     section,#en-tete,#en-tete img {

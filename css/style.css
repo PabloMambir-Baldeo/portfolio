@@ -69,6 +69,11 @@ h2 {
     font-family: "Publica Play";
 }
 
+.BTN:hover {
+    background-color: #ffffff;
+    color: #6FBDD2;
+}
+
 /*Section*/
 section #contenu,section,#texte,#boutons_conteneur,#bouton_CV {
     display: flex;
@@ -141,6 +146,13 @@ button {
     flex-direction: column;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
 
 /*PC*/
 @media screen and (min-width:1250px) {
