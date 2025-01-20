@@ -11,7 +11,7 @@
     margin:0;
     }
     
-    .projet h3,p {
+    .projet h3,.projet p {
     position:absolute;
     left:0;
     right:0;
