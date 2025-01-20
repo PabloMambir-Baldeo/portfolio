@@ -208,7 +208,7 @@ button {
         display: grid;
         gap: 25px 20px;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(14, 1fr);
+        grid-template-rows: repeat(15, 1fr);
     }
     button {
         font-size: 48px;
