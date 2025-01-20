@@ -89,6 +89,32 @@
         padding: 0 10px;
     }
     
+    iframe {
+        width: 100%;
+    }
+
+    #gauche div div * {
+        width: 100px;
+    }
+    #gauche div div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #back {
+        position: fixed;
+        right: 35px;
+        bottom: 15%;
+        width: 10%;
+        background-color: #ffffffc4;
+        border-radius: 75px;
+    }
+    #back img {
+        width: 100%;
+    }
+    
     @media screen and (min-width:1250px){
     main {
     position:relative;
@@ -117,5 +143,9 @@
     #en-tete {
     position:relative;
     height:500px;
+    }
+
+    #gauche div div {
+        justify-content:left ;
     }
     }
