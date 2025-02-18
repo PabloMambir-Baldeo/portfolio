@@ -10,13 +10,99 @@
     <link rel="stylesheet" type="text/css" href="css/projet.css" />
     <script src="JS/script.js"></script>
     <style>
-        section {
+        #pageProjets {
             flex-direction: column;
         }
-        @media  screen and (min-width:1250px) {
-            section {
-                margin: 100px;
+        #selection {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-bottom:25px ;
+        }
+        #selection button {
+            min-width: 50px;
+            border-radius: 100px;
+            padding: 10px;
+            font:var(--bouton);
+        }
+
+        #conteneur-projet {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 0 30px;
+        }
+
+        /*Bouton séléction actif*/
+        .active {
+            padding: 0;
+            border: white 5px Solid;
+            background-color:var(--sub) ;
+            
+        }
+
+        /*Projets miniature*/
+        .projet {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 300px;
+
+            background-color: var(--sub);
+            border-radius: 15px;
+        }
+        .projet * {
+            text-shadow: -2px -2px 0 white,
+                2px -2px 0 white,
+               -2px 2px 0 white,
+                2px 2px 0 white;
+        }
+        .projet p, .projet h3 {
+            position: absolute;
+            z-index: 1;
+            width: calc(100% - 30px);
+            color: var(--sub);
+
+        }
+        .projet p {
+            bottom: 10px;
+            right: 15px;
+            text-align: end;
+            font-size: calc(var(--corp-size)*var(--H3Multi));
+        }
+        .projet h3 {
+            top: 10px;
+            left: 15px;
+            font: var(--titreH3);
+        }
+        .projet img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            
+        }
+
+        @media screen and (min-width:1250px) {
+            #conteneur-projet {
+                margin: 0px 5%;
+                display: grid;
+                grid-template-columns: repeat(12,1fr);
+                grid-template-rows: repeat(15,1fr);
+                gap: 10px 25px;
             }
+            .projet {
+                height: 100%;
+            }
+            #selection button {
+                min-width: 150px;
+                border-radius: 100px;
+                padding: 20px;
+        }
         }
     </style>    
 </head>
@@ -40,98 +126,74 @@
         <h1>Mes projets</h1>
         <section id="pageProjets">
             <div id="selection">
-                <button cat="*" class="active">Tous</button>
+                <button cat="*" class="active BTN">Tous</button>
                 <button cat="Draw">Graphisme</button>
                 <button cat="3D">3D</button>
                 <button cat="Cam">Audiovisuel</button>
                 <button cat="Dev">Développement</button>
             </div>
             <div id="conteneur-projet">
-                <article class="projet" cat="Dev Draw" style="grid-area: span 3/span 6;">
-                    <a href="projets/proj_portfolio.html">
-                        <img src="Images/portfolio.jpg" alt="Capture d'écran de mon portfolio"/>
-                        <h3>Réalisation de mon portfolio</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 3/span 6;">
-                    <a href="projets/proj_carnet.html">
-                        <img src="Images/Bloodhound.jpg" alt="Un de mes dessins"/>
-                        <h3>Carnet de croquis & Dessins</h3>
-                        <p>2023-2025</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 3/span 6;">
-                    <a href="projets/proj_Manga.html">
-                        <img src="Images/Minia_Manga.jpg" alt="Image du manga"/>
-                        <h3>Manga</h3>
-                        <p>2021-2023</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 4/span 6;">
-                    <a href="projets/proj_Album.html">
-                        <img src="Images/Album01.webp" alt="Pochette d'album"/>
-                        <h3>Pochette d'album sur Indesign</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 4/span 6;">
-                    <a href="projets/proj_horror.html">
-                        <img src="Images/SkylessCity01.png" alt="Image du jeu"/>
-                        <h3>Game Jam : Cosmic Horror</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 3/span 6;">
-                    <a href="projets/proj_flower.html">
-                        <img src="Images/" alt="Image du jeu"/>
-                        <h3>Game Jam : Simplicity Jam</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw Cam" style="grid-area: span 2/span 5;">
-                    <a href="projets/proj_Fixsou.html">
-                        <img src="Images/Minia_Fixsou.png" alt="Logo de Fixsou"/>
-                        <h3>ONG : Fixsou</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="3D" style="grid-area: span 3/span 3;">
-                    <a href="projets/proj_Anim3D.html">
-                        <img src="Images/Ban_DemonAnim.png" alt="Image du personnage"/>
-                        <h3>Animation en 3D d'un personnage</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Dev" style="grid-area: span 3/span 4;">
-                    <a href="projets/proj_WyvernHunter.html">
-                        <img src="Images/WyvernHunter.webp" alt="Logo du site"/>
-                        <h3>Refonte de site sur un thème choisi</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Cam" style="grid-area: span 3/span 5;">
-                    <a href="projets/proj_Nikkon23.html">
-                        <img src="Images/Film.webp" alt="Image du film"/>
-                        <h3>Film pour le Nikkon Film Festival 2023</h3>
-                        <p>2023</p>
-                    </a>
-                </article>
-      
-                <article class="projet" cat="Cam Draw" style="grid-area: span 2/span 3;">
-                    <a href="projets/proj_POM.html">
-                        <img src="Images/POM.webp" alt="Logo de l'ONG"/>
-                        <h3>ONG : Peace Of Mind</h3>
-                        <p>2024-2025</p>
-                    </a>
-                </article>
-                <article class="projet" cat="Draw" style="grid-area: span 2/span 4;">
-                    <a href="projets/proj_Picto.html">
-                        <img src="Images/Picto.png" alt="Pictogramme"/>
-                        <h3>Pictogrammes pour une association</h3>
-                        <p>2024</p>
-                    </a>
-                </article>
+                <a href="projets/proj_portfolio.html" class="projet" cat="Dev Draw" style="grid-area: span 3/span 6;" >
+                    <img src="Images/portfolio.jpg" alt="Capture d'écran de mon portfolio"/>
+                    <h3>Réalisation de mon portfolio</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_carnet.html" class="projet" cat="Draw" style="grid-area: span 3/span 6;">
+                    <img src="Images/Bloodhound.jpg" alt="Un de mes dessins"/>
+                    <h3>Carnet de croquis & Dessins</h3>
+                    <p>2023-2025</p>
+                </a>
+
+                <a href="projets/proj_Manga.html" class="projet" cat="Draw" style="grid-area: span 3/span 6;">
+                    <img src="Images/Minia_Manga.jpg" alt="Image du manga"/>
+                    <h3>Manga</h3>
+                    <p>2021-2023</p>
+                </a>
+                <a href="projets/proj_Album.html" class="projet" cat="Draw" style="grid-area: span 4/span 6;">
+                    <img src="Images/Album-Mockup.png" alt="Pochette d'album"/>
+                    <h3>Pochette d'album sur Indesign</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_horror.html" class="projet" cat="Draw" style="grid-area: span 4/span 6;">
+                    <img src="Images/SkylessCity.png" alt="Image du jeu"/>
+                    <h3>Game Jam : Cosmic Horror</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_flower.html" class="projet" cat="Draw" style="grid-area: span 3/span 6;">
+                    <img src="Images/ScreenJeu.png" alt="Image du jeu"/>
+                    <h3>Game Jam : Simplicity Jam</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_Fixsou.html" class="projet" cat="Draw Cam" style="grid-area: span 2/span 5;">
+                    <img src="Images/Logo_Fixsou (SanTransparence).webp" alt="Logo de Fixsou"/>
+                    <h3>ONG : Fixsou</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_Anim3D.html" class="projet" cat="3D" style="grid-area: span 3/span 3;">
+                    <img src="Images/DemonIUT.png" alt="Image du personnage"/>
+                    <h3>Animation en 3D d'un personnage</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_WyvernHunter.html" class="projet" cat="Dev" style="grid-area: span 3/span 4;">
+                    <img src="Images/WyvernHunter.webp" alt="Logo du site"/>
+                    <h3>Refonte de site sur un thème choisi</h3>
+                    <p>2024</p>
+                </a>
+                <a href="projets/proj_Nikkon23.html" class="projet" cat="Cam" style="grid-area: span 3/span 5;">
+                    <img src="Images/Film.webp" alt="Image du film"/>
+                    <h3>Film pour le Nikkon Film Festival 2023</h3>
+                    <p>2023</p>
+                </a>
+                <a href="projets/proj_POM.html" class="projet" cat="Cam Draw" style="grid-area: span 2/span 3;">
+                    <img src="Images/POM.webp" alt="Logo de l'ONG"/>
+                    <h3>ONG : Peace Of Mind</h3>
+                    <p>2024-2025</p>
+                </a>
+                <a href="projets/proj_Picto.html" class="projet" cat="Draw" style="grid-area: span 2/span 4;">
+                    <img src="Images/BanPicto.png" alt="Pictogramme"/>
+                    <h3>Pictogramme pour une association</h3>
+                    <p>2024</p>
+                </a>
             </div>
         </section>
     </main>

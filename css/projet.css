@@ -1,151 +1,127 @@
-.projet {
-    width:100%;
-    position:relative;
-    border-radius:15px;
-    background-color: #ff9c10ce;
+section {
+    margin: 0 0 40px;
+    width: 100%;
 }
-    
-    .projet img {
-    width:100%;
-    height:100%;
-    border-radius:15px;
-    object-fit:cover;
-    margin:0;
-    }
-    
-    .projet h3,.projet p {
-    position:absolute;
-    left:0;
-    right:0;
-    opacity: 0;
-    color: black;
-    }
-    
-    .projet h3 {
-    top:0;
-    margin:12px 15px;
-    }
-    
-    .projet p {
-    bottom:0;
-    text-align:end;
-    font-family:"Publica Play";
-    font-size:33px;
-    margin:5px 15px;
-    }
+ul {
+    padding-left:40px ;
+}
+#en-tete {
+    width: 100%;
+    position: relative;
+    height: 320px;
+}
 
-    .projet:hover h3,.projet:hover p {
-        opacity:100%;
-    }
+#en-tete img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#en-tete h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    color: var(--sub);
+    text-shadow: -3px -3px 0 white,
+                3px -3px 0 white,
+               -3px 3px 0 white,
+                3px 3px 0 white;
+}
+
+#contenu {
+    margin: 0 5% 40px;
+    width: calc(100% - 10%);
+}
+#Droite > * {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+#Droite > a {
+    margin-bottom: 20px;
+
+}
+#carrousel * {
+    width: 100%;
+}
+
+#back {
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    width: 25%;
+    background-color: hsla(35, 100%, 69%, 0.5);
+        border-radius:45px;
+}
+#back p {
+    display: none;
     
-    section,#en-tete,#en-tete img {
-    margin:0;
-    }
-    
-    ul {
-    padding-left:40px;
-    }
-    
+}
+#gauche div div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#gauche div div * {
+    width: 25%;
+}
+
+#gauche div {
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width:1250px) {
     #en-tete {
-    position:relative;
-    height:300px;
+        height: 800px;
     }
-    
-    #en-tete img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    section {
+        flex-direction: column;
     }
-    
-    #en-tete h1 {
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    padding:10px;
-    }
-    
-    #gauche {
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-    margin-bottom:80px;
-    }
-    
     h2 {
-    margin-bottom:15px;
+        text-align: start;
     }
-    
-    #Droite {
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    }
-
-    .active {
-        background-color:#FFBE63 ;
-        border: white 3px Solid;
-        border-radius: 100px;
-        padding: 0 10px;
-    }
-    
-    iframe {
-        width: 100%;
-    }
-
-    #gauche div div * {
-        width: 100px;
-    }
-    #gauche div div {
+    #contenu {
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap : 40px;
+    }
+    #gauche {
+        width: 40%;
+    }
+    #droite {
+        width: 60%;
+
+    }
+
+    #gauche div div {
+        justify-content: flex-start;
         gap: 10px;
     }
 
-    #back {
-        position: fixed;
-        right: 35px;
-        bottom: 15%;
-        width: 10%;
-        background-color: #ffffffc4;
-        border-radius: 75px;
+    #carrousel {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
     }
-    #back img {
-        width: 100%;
-    }
-    
-    @media screen and (min-width:1250px){
-    main {
-    position:relative;
-    top:-20px;
-    }
-    
-    section {
-    flex-direction:column;
-    }
-    
-    section #contenu {
-    flex-direction:row-reverse;
-    gap:30px;
-    margin:0 100px;
-    }
-    
-    #contenu #Droite {
-    width:67%;
-    }
-    
-    #contenu #gauche {
-    width:31%;
-    gap:80px;
-    }
-    
-    #en-tete {
-    position:relative;
-    height:500px;
+    #carrousel * {
+        width: calc(50% - 10px);
     }
 
-    #gauche div div {
-        justify-content:left ;
+    #back {
+        
+        width: 10%;
+        right: 50px;
+        bottom: 50px;
+        
     }
+    #back p {
+        display: inline;
+        margin: 0 25px 25px;
     }
+}
