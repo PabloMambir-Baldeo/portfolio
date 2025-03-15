@@ -98,6 +98,11 @@ a.BTN {
     flex-direction: column;
     gap: 25px;
 }
+#LastProject_Conteneur {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
 
 /*PC*/
 @media screen and (min-width:1024px) {
@@ -121,6 +126,10 @@ a.BTN {
     }
 
     #boutons_conteneur {
+        flex-direction: row;
+    }
+    #LastProject_Conteneur {
+        display: flex;
         flex-direction: row;
     }
 }
