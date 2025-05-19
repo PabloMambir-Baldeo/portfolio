@@ -1,87 +1,74 @@
-/*Mobile*/
 header {
-    width: 100%;
-    height: 60px;
-
-    padding: 0 10px;
-    
     display: flex;
+    width: calc(100% - 16px);
+    padding: 8px;
     justify-content: space-between;
     align-items: center;
 }
 
-/* header .BTN {
-    background-color: transparent;
-} */
-a#open,a#close {
-    width: 60px;
+#logo,#Hamburger {
+    z-index: 1;
 }
-/*Menu Hamburger*/
-/*Menu fermé*/
-#menu {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 248px 25px;
-    display: none;
-    position: fixed;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+#logo {
+    width: 4.8rem;
+    aspect-ratio: 1/1;
     flex-shrink: 0;
-    z-index: 2;
-}
-#close {
-    display: none;
-}
-/*Menu ouvert*/
-#menu:target {
-    display: flex;
-    background-color: #FFBE63;
-}
-#menu:target~a#close {
-    display: flex;
-    z-index: 2; 
-    position: fixed ;
-    top: 19.5px;
-    right: 10px;
-}
-#menu:target~a#open {
-    display: none;
-
 }
 
-/*PC*/
-@media screen and (min-width:1250px) {
-    #open {
+#nav_PC {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+#nav_PC .button {
+    align-self: stretch;
+    height: 4.1rem;
+    min-width: 5.1rem;
+}
+
+#nav_Mobile,#Hamburger{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header .button {
+        background-color: var(--Main);
+        color: white;
+    }
+
+    #Hamburger {
+        display: block;
+        width: 96px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+
+    }
+    #nav_PC {
         display: none;
-
     }
-    
-    header {
-        height: 138px;
-        padding: 0 25px;
-    }
-
-    #menu {
-        position: static;
-
-        padding: 0;
-    
-        width: 60%;
+    #nav_Mobile.open {
+        position: fixed;
+        left: 0;
+        top: 0;
 
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 5%;
+        gap: 1.25rem;
         flex-shrink: 0;
-    }
 
-    /* header .BTN {
-        font-size: 32px;
-        height: 120px;
-        background-color: #FFBE63;
-    } */
+        background: rgba(255, 190, 99, 0.80);
+        backdrop-filter: blur(12.5px);
+    }
+}
+
+@media screen and (max-width:426px ) {
+    header .button {
+        font-size: 1.5rem;
+    }
 }

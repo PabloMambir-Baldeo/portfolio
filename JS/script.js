@@ -1,91 +1,63 @@
+function init () {
+    //Menu Hamburger
+    icon = document.getElementById("Hamburger");
 
-function init()
-{
-    const buttons = document.querySelectorAll("#selection button");
-    console.log(buttons);
-    const projets = document.querySelectorAll(".projet");
-    console.log(projets);
-    
-    //On vérifie chaque projet pour voir lequel on affiche
-    buttons.forEach(button =>
+    //Filtre Projet
+    const Buttons = document.querySelectorAll(".filter *");
+    const Projects = document.querySelectorAll("a.projet");
+
+    Buttons.forEach(Button =>
     {
-        button.addEventListener("click",(evt) => {
-            const filtre =button.getAttribute("cat");
-            buttons.forEach((button) => {
-                button.classList=[];
-            });
-            button.classList="active";
+        Button.addEventListener("click",()=> {
+            const filter = Button.getAttribute("category");
+            // console.log(filter);
 
-            
-            //console.log(filtre);
-            //console.log(Taille);
+            compteur = 0
+            Select = new Array();
 
-            var Selected =[];
-            //parcours du projet
-            projets.forEach(projet =>
-            {
-                const category = projet.getAttribute("cat");
-                if(filtre==="*" || category.includes(filtre))
-                {
-                    projet.style.display="block";
-                    Selected.push(projet);  //Ajout du projet dans celui séléctionné
+            Projects.forEach(project => {
+                project.classList.remove("grand-Projet");
+                
+                const ProjCat = project.getAttribute("category");
+                console.log(ProjCat);
+                if ((ProjCat.includes(filter)) ||(filter == "*")) {
+                    project.style.display="";
                 }
-                else
-                {
-                    projet.style.display="none";
+                else {
+                    project.style.display = "none";
                 }
-            });
 
-            //Séléction de l'agencement des boîtes
-            switch(filtre)
-            {
-                case "Draw" :
-                    var Taille = [[2,5],[4,7],[3,4],[4,4],[2,5],[4,4],[2,4],[4,4],[2,4]];
-                case "3D" :
-                    var Taille = [[15,12]];
-                    //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
-                    break;
-                case "Dev" :
-                    var Taille = [[7,12],[6,12]];
-                    //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
-                    break;
-                case "Cam" :
-                    var Taille = [[3,7]];
-                    //conteneur.style.gridTemplateRows = "repeat(10, 1fr)";
-                    break;
-                default :
-                    var Taille = [[3,6],[3,6],[3,6],[4,6],[4,6],[3,6],[2,5],[3,3],[3,4],[3,5],[2,3],[2,4]];
+                if(project.style.display != "none") {
+                    compteur++;
+                    Select.push(project);
+                }
+            })
+            console.log(compteur); 
+            if(compteur % 2 == 1) {
+                console.log(Select[Select.length - 1]);
+                Select[Select.length - 1].classList.add("grand-Projet");
             }
-            console.log(Taille);
-            Selected.forEach((projet,index) =>
-                {
-                    projet.style.gridArea="span "+Taille[index][0]+" / span " +Taille[index][1];
-                });
-            });
+
+        });
     });
 }
 
-/*
-Grid *
-hauteur / Largeur
-grid-area: span 2 / span 4;
-grid-area: span 4 / span 4;
-grid-area: span 3 / span 4;
+//Fonction pour changer l'affichage du menu Hamburger
+function Menu() {
+    // console.log("function executed ! ");
+    var menu = document.getElementById("nav_Mobile");
+    
+    // console.log(menu);
+    // console.log(icon);
 
-grid-area: span 4 / span 4;
-grid-area: span 3 / span 4;
-grid-area: span 4 / span 4;
+    if (menu.className === "") {
+        icon.className="open";
+        menu.className = "open";
+    }
+    else {
+        icon.className="close";
+        menu.className = "";
+    }
+}
 
-grid-area: span 2 / span 4;
-
-grid-area: span 4 / span 4;
-grid-area: span 4 / span 4;
-grid-area: span 2 / span 4;
-grid-area: span 6 / span 4;
-
-grid-area: span 3 / span 4;
-grid-area: span 2 / span 8;
-grid-area: span 4 / span 7;
-grid-area: span 4 / span 5;
-*/
 

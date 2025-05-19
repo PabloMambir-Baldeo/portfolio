@@ -1,0 +1,83 @@
+/*Style page accueil*/
+#accueil {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#Txt {
+    display: flex;
+    width: 57.60%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.4rem 0;
+    flex-shrink: 0;
+}
+#accueil #image {
+    display: flex;
+    width: 40.71%;
+}
+#image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#Txt .button {
+    display: flex;
+    width: 61.58%;
+    height: 2.1rem;
+    flex-shrink: 0;
+}
+
+#SearchPro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+#SearchPro {
+    color: #000;
+    text-align: center;
+}
+#SearchPro p {
+    margin: 0.53rem 8.45%;
+}
+
+#LastProject{
+    width: 100%;
+}
+
+#LastProject > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+}
+
+#LastProject #BtnPlacement {
+    display: flex;
+    width: 40.71%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+/*Pour version Mobile, mais plus tôt pour que ça paraisse pas trop bizarre*/
+@media screen and (max-width:768px ) /*Taille Tablette*/ {
+    #accueil {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    #accueil #Txt, #accueil #image{
+        width: 100%;
+    }
+    #accueil #image {
+        justify-content: center;
+    }
+    #image img {
+        width:48.88%
+    }
+
+}

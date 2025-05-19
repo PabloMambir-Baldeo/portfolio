@@ -1,127 +1,143 @@
-section {
-    margin: 0 0 40px;
-    width: 100%;
-}
-ul {
-    padding-left:40px ;
-}
-#en-tete {
-    width: 100%;
-    position: relative;
-    height: 320px;
-}
-
-#en-tete img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#en-tete h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    color: var(--sub);
-    text-shadow: -3px -3px 0 white,
-                3px -3px 0 white,
-               -3px 3px 0 white,
-                3px 3px 0 white;
-}
-
-#contenu {
-    margin: 0 5% 40px;
-    width: calc(100% - 10%);
-}
-#Droite > * {
-    display: inline-block;
-    margin-bottom: 15px;
-}
-#Droite > a {
-    margin-bottom: 20px;
-
-}
-#carrousel * {
-    width: 100%;
-}
-
-#back {
-    position: fixed;
-    right: 0;
-    bottom: 5px;
-    width: 25%;
-    background-color: hsla(35, 100%, 69%, 0.5);
-        border-radius:45px;
-}
-#back p {
-    display: none;
-    
-}
-#gauche div div {
+.filter {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    align-content: center;
+    gap: 0.35rem;
+    align-self: stretch;
     flex-wrap: wrap;
 }
 
-#gauche div div * {
-    width: 25%;
+.filter * {
+    display: flex;
+    height: 2rem;
+    padding: 0.35rem 1.55rem;
+    align-items: center;
+}
+.cat {
+    display: flex;
+    height: 2rem;
+    padding: 0.35rem 1.55rem;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+
+    border-radius: 1.55rem;
+    background: #807D7D;
+    color: white;
+    border: 6px solid white;
 }
 
-#gauche div {
-    margin-bottom: 25px;
+.cat.perso {
+    background-color: #ffffff;
+    color: var(--Text);
+}
+.cat.uni {
+    background-color: #1d1d1d;
 }
 
-@media screen and (min-width:1250px) {
-    #en-tete {
-        height: 800px;
+.cat.graph {
+    background-color: var(--Main);
+}
+.cat.film {
+    background-color: #bf4e31;
+}
+.cat.md {
+    background-color:#625469 ;
+}
+.cat.DDD {
+    background-color:#ffa163;
+    color: var(--Text);
+}
+
+
+#projets {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1.2rem 1rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+#filtreProj {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    align-self: stretch;
+}
+
+.projet {
+    box-shadow: var(--B-shadow);
+}
+a.projet {
+    width: 38.01%;
+    display: flex;
+    padding: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    aspect-ratio: 450 / 352;
+    text-decoration: none;
+
+    border-radius: 2.35rem;
+    background: var(--Secondary, #FFBE63);
+}
+
+.projet h3 {
+    display: flex;
+    /* height: 2.4rem; */
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    color: #517F9E;
+}
+
+.projet .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.4rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.projet .img {
+    display: flex;
+    width: 100%;
+    background:var(--Banner);
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 15/8;
+
+    border-radius: 1.55rem 1.55rem 0rem 0rem;
+    background: white;
+    background: var(--Banner);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     }
-    section {
+
+@media screen and (min-width:425px) {
+    a.grand-Projet {
+        width: 80.41%;
+        aspect-ratio: 952/616;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div#projets {
         flex-direction: column;
     }
-    h2 {
-        text-align: start;
-    }
-    #contenu {
-        display: flex;
-        flex-direction: row-reverse;
-        gap : 40px;
-    }
-    #gauche {
-        width: 40%;
-    }
-    #droite {
-        width: 60%;
 
+    div#projets>* {
+        width: calc(100% - 1.6rem);
     }
-
-    #gauche div div {
-        justify-content: flex-start;
-        gap: 10px;
-    }
-
-    #carrousel {
-        width: 80%;
-        margin: auto;
-        display: flex;
+    .projet .container {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-between;
-    }
-    #carrousel * {
-        width: calc(50% - 10px);
-    }
-
-    #back {
-        
-        width: 10%;
-        right: 50px;
-        bottom: 50px;
-        
-    }
-    #back p {
-        display: inline;
-        margin: 0 25px 25px;
     }
 }

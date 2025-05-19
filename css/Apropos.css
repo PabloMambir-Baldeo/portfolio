@@ -1,0 +1,105 @@
+#Desc,#ExpPro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 83.11%;
+}
+#Desc {
+    gap: 0.4rem;
+}
+#ExpPro,#soft_Titre {
+    gap: 0.8rem;
+}
+#ExpPro>* {
+    width: 100%;
+}
+
+#Desc img{
+    width:59.35%;
+}
+#soft.container,#Pro.container {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#soft img {
+    width:22%;
+}
+#soft.container {
+    width: 79.27%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px 20px;
+    flex-wrap: wrap;
+}
+#Pro.container {
+    gap: 2.5rem;
+}
+
+#Pro * {
+    color:black
+}
+
+.Poste {
+    display: flex;
+    width: 100%;
+    padding: 1.55rem;
+    align-items: flex-start;
+    gap: 0.35rem;
+    flex: 1 0 0;
+
+    border-radius: 1.55rem;
+    background: var(--secondary);
+}
+
+#soft_Titre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#soft_Titre h2 {
+    width: 100%;
+}
+
+.Poste img {
+        width: 23%;
+        min-width: 267px;
+}
+.Poste #Txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    flex: 1 0 0;
+}
+.Poste #Txt ul {
+    align-self: stretch;
+}
+
+@media screen and (max-width:768px ) /*Taille entre Tablette*/ {
+    .Poste {
+        flex-direction: column;
+        align-items:center;
+    }
+    .Poste img {
+        width: 45.79%;
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #Desc {
+        width: 100%;
+    }
+    #soft img {
+        max-width: 50px;
+    }
+    #soft.container {
+        flex-direction: row;
+        width: 100%;
+    }
+}
