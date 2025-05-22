@@ -11,6 +11,7 @@
     --secondary:#FFBE63;
     --Main: #6FBDD2;
     --Text:#0A2A33;
+    --Bold:#184c5a;
     
     --O-shadow:7px 7px 7px 0px rgba(255, 190, 99, 0.50) ;
     --B-shadow:7px 7px 7px 0px rgba(78, 129, 159, 0.50) ;
@@ -73,23 +74,21 @@ main {
     font-weight: 400;
 }
 .bold {
-    font-family: "Mouldy Cheese";
     font-size: calc(1rem + 2px);
     font-style: normal;
-    font-weight: 100;
+    font-weight: 800;
     line-height: normal;
     paint-order: stroke fill;
-    color: #ffffff;
-    -webkit-text-stroke-width: 6px;
+    color: var(--Bold);
+    /* -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: var(--Text);
     margin: 0 0.2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem; */
 }
 
 /*Bouton*/
 .button {
     /*Police Bouton*/
-    font-family: "Inter";
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -107,13 +106,13 @@ main {
     background-color: var(--secondary);
 
     box-shadow: var(--B-shadow);
+    margin-bottom: 0.6rem;
 
 }
 /*React Bouton*/
 .button:hover {
     background-color: white;
 }
-
 
 /*Responsive*/
 @media screen and (max-width:426px ) {

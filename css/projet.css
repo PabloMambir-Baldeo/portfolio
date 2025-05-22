@@ -42,7 +42,7 @@
 .cat.film {
     background-color: #bf4e31;
 }
-.cat.md {
+.cat.autre {
     background-color:#625469 ;
 }
 .cat.DDD {
@@ -95,7 +95,7 @@ a.projet {
     flex-shrink: 0;
     align-self: stretch;
 
-    color: #517F9E;
+    color: var(--Bold);
 }
 
 .projet .container {
