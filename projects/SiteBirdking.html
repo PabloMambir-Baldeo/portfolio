@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mes projets - Portfolio</title>
+    <title>Site Jimdo : BD-Birdking - Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/projet.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/projet(Template).css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
 
-    <script src="js/script.js"></script>
+    <style>
+
+    </style>
+
+    <script src="../js/script.js"></script>
 </head>
 <body onload="init()">
     <header>
-        <a href="index.html" id="logo">
-            <img src="images/LogoTeMP.svg" alt="Logo"/>
+        <a href="../index.html" id="logo">
+            <img src="../images/LogoTeMP.svg" alt="Logo"/>
         </a>
 
         <!-- Classic Menu -->
          <nav id="nav_PC">
-            <a href="Apropos.html" class="button">A propos</a>
-            <a href="Projets.html" class="button">Mes projets</a>
+            <a href="../Apropos.html" class="button">A propos</a>
+            <a href="../Projets.html" class="button">Mes projets</a>
          </nav>
 
         <!-- Menu Hamburger -->
@@ -127,77 +131,65 @@
 
          <!-- Menu Mobile -->
           <nav id="nav_Mobile">
-            <a href="Apropos.html" class="button">A propos</a>
-            <a href="Projets.html" class="button">Mes projets</a>
+            <a href="../Apropos.html" class="button">A propos</a>
+            <a href="../Projets.html" class="button">Mes projets</a>
 
           </nav>
     </header>
     <main>
-        <h1>Mes projets</h1>
-        <div id="filtreProj">
-            <div class="filter">
-                <button class="button" category="*">Tous</button>
-                <button class="button" category="ART">Graphisme</button>
-                <button class="button" category="FILM">Audiovisuel</button>
-                <button class="button" category="3D">3D</button>
-                <button class="button" category="JV">Jeux vidéo</button>
-                <button class="button" category="DEV">Dévelopement web</button>
-            </div>
-            <div id="projets">
-                <a href="projects/Album.html" class="projet" category="ART">
-                        <div class="img" style="--Banner:url(../images/Album.png);">
-                        </div>
-                        <h3>Pochette d'album</h3>
+        <div id="heroBanner" style="--Banner: url(../images/BirdkingGif.gif); background-position-y: 13%;">
+        </div>
+        <div id="content">
+            <h1>Site sur une BD avec un CMS</h1>
+            <div id="info">
+                <div id="gauche">
+                    <div id="Software">
+                        <h2>Logiciels employés</h2>
                         <div class="container">
-                            <div class="cat graph">Graphisme</div>
-                            <div class="cat uni">Universitaire</div>
+                            <img src="../images/Software/Ai.svg" alt="Logo d'Illustrator"/>
+                            <img src="../images/Software/Figma.svg" alt="Logo de Figma"/>
+                            <img src="../images/Software/PSD.svg" alt="Logo de Photoshop">
                         </div>
-                </a>
-                <a href="projects/PresentationFusion.html" class="projet" category="FILM ART">
-                    <div class="img"  style="--Banner:url(https://i.ytimg.com/vi/Rob0fxSiVbM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgRCh_MA8=&rs=AOn4CLBwrhJE3YRGx0Zc-MTbNi3IUy75Mw);"></div>
-                    <h3>Vidéo de présentation sur ton décalé</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat film ">Audiovisuel</div>
-                        <div class="cat uni">Universitaire</div>
+
                     </div>
-                </a>
-                <a href="projects/MotionDesign.html" class="projet" category="ART FILM">
-                    <div class="img" style="--Banner:url(../images/BannerMotion.png); background-size: 150%; background-position-x: 100%;">
+                    <div id="skills">
+                        <h2>Compétences utilisées</h2>
+                        <ul>
+                            <li>Créativité</li>
+                            <li>User Interface</li>
+                            <li>Rédaction de contenu</li>
+                            <li>Création d'un GIF</li>
+                        </ul>
                     </div>
-                    <h3>Animations de Motion Design</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat autre">Motion Design</div>
-                        <div class="cat uni">Universitaire</div>
+                </div>
+                <div id="droite">
+                    <p>Concevoir un site de A à Z peut être long (Coder le site, trouver un hébergeur, gérer des utilisateurs, etc...).
+                        Pour pallier aux côté code, du problème, il existe des CMS qui permettent de simplifier le processus de création de site en simple bloc que l'on agence pour structurer son site.
+                        <br/><br/>
+                        Pour ce projet, j'ai réalisé un site sur la BD de Crom Ink : Birdking, à l'aide du CMS Jimdo. Le but de ce projet de cours était de découvrir le concept de CMS; et d'apprendre à structure le contenu d'un site.
+                        <br/><br/>
+                        J'ai pu structurer mon site à l'aide de Figma, sous forme d'une Wireframe avant de passer à la réalisation sur Jimdo.
+                    </p>
+                    <div id="projectLink">
+                        <h2>Liens du projet</h2>
+                        <a class="button" target="_blank" href="https://birdking-bd.jimdofree.com">
+                            <img src="../images/BloNav.png" alt="Icon | "/>Lien vers le site</a>
+                        <a class="button" target="_blank" href="https://www.figma.com/proto/M3Y813QFwgERGh8g2ttF4Y/Birdking-bd-R211?page-id=0%3A1&node-id=18-62&p=f&viewport=287%2C379%2C0.12&t=cVUCknXXPfc67JGG-1&scaling=min-zoom&content-scaling=fixed">
+                            <img src="../images/Software/Figma.svg" id="Figma" alt="Icon |"/>Lien vers la wireframe</a>
                     </div>
-                </a>
-                <!-- a[href=projects/].projet[category=n]>div.img[style=--Banner:]+h3+div.container -->
-                 <a href="projects/DemonIUT.html" class="projet" category="3D FILM">
-                    <div class="img" style="--Banner:url(../images/BannerDemon.png); background-size: 162%; background-position-x: 100%;"></div>
-                    <h3>Animation d'un personnage en 3D</h3>
-                    <div class="container">
-                        <div class="cat DDD">3D</div>
-                        <div class="cat film">Audiovisuel</div>
-                        <div class="cat perso">Perso</div>
-                    </div>
-                 </a>
-                 <a href="projects/AffichesBobignyMatsuri.html" class="projet" category="ART">
-                    <div class="img" style="--Banner:url(../images/AfficheMatsuri2025_V2\(Bleu\).png); background-position: -24px -22px; background-size: 112%;"></div>
-                    <h3>Affiche pour un évènement : Bobigny Matsuri</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                    </div>
-                 </a>
-                 <a href="projects/SiteBirdking.html" class="projet" category="graphisme">
-                    <div class="img" style="--Banner: url(../images/BirdkingGif.gif); background-position: 0 15%;"></div>
-                    <h3>Site sur une BD avec un CMS</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat autre">User interface (UI)</div>
-                        <div class="cat uni">Universitaire</div>
-                    </div>
-                 </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="medias">
+            <h2>Galerie d'images</h2>
+            <div id="media-container">
+                <img src="../images/Birdking-PageAccueil.png" alt="Capture d'écran de la page d'accueil"/>
+                <img src="../images/BirdkingGif.gif" alt="Image animée réaliser pour la page d'accueil"/>
+                <img src="../images/LogoBirdking.png" alt="Logo du site"/>
+                
+                
+                
             </div>
         </div>
     </main>
@@ -205,15 +197,15 @@
     <footer>
         <div id="contact">
             <a id="platform" target="_blank" href="https://www.linkedin.com/in/pablomambir-baldeo">
-                <img src="images/LinkedIn.svg" alt="Logo LinkedIn |"/>
+                <img src="../images/LinkedIn.svg" alt="Logo LinkedIn |"/>
                 <p>LinkedIn</p>
             </a>
             <a id="platform" target="_blank" href="mailto:pablomambir@outlook.fr">
-                <img src="images/mail.svg" alt="Logo Mail |"/>
+                <img src="../images/mail.svg" alt="Logo Mail |"/>
                 <p>Mail</p>
             </a>
             <a id="platform" target="_blank" href="CV.pdf">
-                <img src="images/CV.svg" alt="Mon CV"/>
+                <img src="../images/CV.svg" alt="Mon CV"/>
                 <p>Cv</p>
             </a>
         </div>
