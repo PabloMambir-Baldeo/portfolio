@@ -129,7 +129,7 @@ a.projet {
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:625px) {
     div#projets {
         flex-direction: column;
     }

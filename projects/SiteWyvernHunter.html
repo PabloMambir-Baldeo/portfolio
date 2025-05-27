@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mes projets - Portfolio</title>
+    <title>Wyvern Hunter - portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/projet.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/projet(Template).css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <style>
+        #media-container * {
+            width: 32.13%;
+                
+        }
+        @media screen and (max-width:768px) {
+            #media-container > * {
+                width: 100%;
+                max-height: none;
+            }
+        }
+    </style>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body onload="init()">
     <header>
-        <a href="index.html" id="logo">
-            <img src="images/LogoTeMP.svg" alt="Logo"/>
+        <a href="../index.html" id="logo">
+            <img src="../images/LogoTeMP.svg" alt="Logo"/>
         </a>
 
         <!-- Classic Menu -->
          <nav id="nav_PC">
-            <a href="Apropos.html" class="button">A propos</a>
-            <a href="Projets.html" class="button">Mes projets</a>
+            <a href="../Apropos.html" class="button">A propos</a>
+            <a href="../Projets.html" class="button">Mes projets</a>
          </nav>
 
         <!-- Menu Hamburger -->
@@ -127,85 +139,77 @@
 
          <!-- Menu Mobile -->
           <nav id="nav_Mobile">
-            <a href="Apropos.html" class="button">A propos</a>
-            <a href="Projets.html" class="button">Mes projets</a>
+            <a href="../Apropos.html" class="button">A propos</a>
+            <a href="../Projets.html" class="button">Mes projets</a>
 
           </nav>
     </header>
     <main>
-        <h1>Mes projets</h1>
-        <div id="filtreProj">
-            <div class="filter">
-                <button class="button" category="*">Tous</button>
-                <button class="button" category="ART">Graphisme</button>
-                <button class="button" category="FILM">Audiovisuel</button>
-                <button class="button" category="3D">3D</button>
-                <button class="button" category="JV">Jeux vidéo</button>
-                <button class="button" category="DEV">Développement web</button>
-            </div>
-            <div id="projets">
-                <a href="projects/Album.html" class="projet" category="ART">
-                        <div class="img" style="--Banner:url(../images/Album.png);">
-                        </div>
-                        <h3>Pochette d'album</h3>
+        <div id="heroBanner" style="--Banner:url(../images/WH-Banniere.webp);">
+        </div>
+        <div id="content">
+            <h1>Wyvern Hunter : Site web sur un jeu</h1>
+            <div id="info">
+                <div id="gauche">
+                    <div id="Software">
+                        <h2>Logiciels et langages employés</h2>
                         <div class="container">
-                            <div class="cat graph">Graphisme</div>
-                            <div class="cat uni">Universitaire</div>
+                            <img src="../images/Software/Ai.svg" alt="Logo Illustrator"/>
+                            <img src="../images/Software/PHP.svg" alt="Logo PHP"/>
+                            <img src="../images/Software/HTML.svg" alt="Logo html"/>
+                            <img src="../images/Software/Css.svg" alt="Logo css"/>
+
                         </div>
-                </a>
-                <a href="projects/PresentationFusion.html" class="projet" category="FILM ART">
-                    <div class="img"  style="--Banner:url(https://i.ytimg.com/vi/Rob0fxSiVbM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgRCh_MA8=&rs=AOn4CLBwrhJE3YRGx0Zc-MTbNi3IUy75Mw);"></div>
-                    <h3>Vidéo de présentation sur ton décalé</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat film ">Audiovisuel</div>
-                        <div class="cat uni">Universitaire</div>
+
                     </div>
-                </a>
-                <a href="projects/MotionDesign.html" class="projet" category="ART FILM">
-                    <div class="img" style="--Banner:url(../images/BannerMotion.png); background-size: 150%; background-position-x: 100%;">
+                    <div id="skills">
+                        <h2>Compétences utilisées</h2>
+                        <ul>
+                            <li>Dévelopement web</li>
+                            <li>Gestion de base de données</li>
+                            <li>Création digital</li>
+                        </ul>
                     </div>
-                    <h3>Animations de Motion Design</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat autre">Motion Design</div>
-                        <div class="cat uni">Universitaire</div>
+                </div>
+                <div id="droite">
+                    <p>
+                        Ce projet est en fait une combinaison de 2 projets, pour montrer l'évolution du site.
+                        <br/><br/>
+                        Le premier projet est la V1 du site : Pour ce projet, le but était de réaliser un site web dans le langage php, et servait à mobiliser mes connaissances vis à vis de ce langage, vu au premier semestre.
+                        <br/><br/>
+                        Le deuxième projet est une V2 du site : En effet, pour ce projet-ci, nous avions comme consigne de reprendre et rajouter une base de données ainsi qu'une fonctionnalité qui permettrait à l'utilisateur d'interagir avec cette dernière.
+                        <br/><br/>
+                        Avec ces projets, j'ai pu expérimenter le développement sur un serveur, la gestion d'une base de données en PHP et réfléchir sur comment structurer mes éléments pour une bonne expérience utilisateur.
+                        <br/><br/>
+                        Malgré des problèmes plus qu'énormes comme le fait que certains caractères ne soient pas affichés correctement, j'ai trouvé l'évolution du projet très intéressante.
+                        <br/><br/>
+                        N'hésitez pas à faire un tour sur les 2 sites et à laisser un commentaire dans le livre d'or disponible sur le deuxième site.
+                        <br/>
+                </p>
+                <h3>Petites notes sur l'espace livre d'or</h3>
+                <p>
+                    <span class="bold">Livre d'or :</span> Pour pouboir mettre un commentaire dans le livre d'or,
+                    vous aurez besoin de vous connecter, ou de créer un compte.
+                    <br/><span class="bold">ATTENTION : votre commentaire doit être court (3 lignes max environ),
+                        et pour le poster, vous ne devez validez qu'une seul et unique fois, sinon le commentaire
+                        sera disponible en deux exemplaires.</span>
+                </p>
+                    <div id="projectLink">
+                        <h2>Liens du projet</h2>
+                        <a class="button" target="_blank" href="https://projets.iut-bobigny.univ-paris13.fr/~mambir-baldeo/WyvernHunter/PHP/"><img src="../images/BloNav.png" alt="Lien vers le site"/> Lien vers la V1</a>
+                        <a class="button" target="_blank" href="https://projets.iut-bobigny.univ-paris13.fr/~mambir-baldeo/WyvernHunterV2/PHP/"><img src="../images/WH-LogoV2.svg" alt="Lien vers le site"/> Lien vers la V2</a>
                     </div>
-                </a>
-                <!-- a[href=projects/].projet[category=n]>div.img[style=--Banner:]+h3+div.container -->
-                 <a href="projects/DemonIUT.html" class="projet" category="3D FILM">
-                    <div class="img" style="--Banner:url(../images/BannerDemon.png); background-size: 162%; background-position-x: 100%;"></div>
-                    <h3>Animation d'un personnage en 3D</h3>
-                    <div class="container">
-                        <div class="cat DDD">3D</div>
-                        <div class="cat film">Audiovisuel</div>
-                        <div class="cat perso">Perso</div>
-                    </div>
-                 </a>
-                 <a href="projects/AffichesBobignyMatsuri.html" class="projet" category="ART">
-                    <div class="img" style="--Banner:url(../images/AfficheMatsuri2025_V2\(Bleu\).png); background-position: -24px -22px; background-size: 112%;"></div>
-                    <h3>Affiche pour un évènement : Bobigny Matsuri</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                    </div>
-                 </a>
-                 <a href="projects/SiteBirdking.html" class="projet" category="graphisme">
-                    <div class="img" style="--Banner: url(../images/BirdkingGif.gif); background-position: 0 15%;"></div>
-                    <h3>BirdkingBd : Site avec un CMS</h3>
-                    <div class="container">
-                        <div class="cat graph">Graphisme</div>
-                        <div class="cat autre">User interface (UI)</div>
-                        <div class="cat uni">Universitaire</div>
-                    </div>
-                 </a>
-                 <a href="projects/SiteWyvernHunter.html" class="projet" category="DEV">
-                    <div class="img" style="--Banner:url(../images/WH-Banniere.webp); background-size: 162%;background-position: 1% 30%;"></div>
-                    <h3>Wyvern Hunter : Site sur un jeu</h3>
-                    <div class="container">
-                        <div class="cat dev">Dev</div>
-                        <div class="cat uni">Universitaire</div>
-                    </div>
-                 </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="medias">
+            <h2>Galerie d'images</h2>
+            <div id="media-container">
+                <img src="../images/WH-InterfaceConnection.png" alt="Première de couverture de la pochette d'album"/>
+                <img src="../images/WH-Bestiaire.png" alt="Deuxième page de la pochette"/>
+                <img src="../images/WH-ExempleArticle.png" alt="Troisième page de la pochette"/>
+                <img src="../images/WH-Arme.png" alt="Dernière de couverture de la pochette"/>
             </div>
         </div>
     </main>
@@ -213,15 +217,15 @@
     <footer>
         <div id="contact">
             <a id="platform" target="_blank" href="https://www.linkedin.com/in/pablomambir-baldeo">
-                <img src="images/LinkedIn.svg" alt="Logo LinkedIn |"/>
+                <img src="../images/LinkedIn.svg" alt="Logo LinkedIn |"/>
                 <p>LinkedIn</p>
             </a>
             <a id="platform" target="_blank" href="mailto:pablomambir@outlook.fr">
-                <img src="images/mail.svg" alt="Logo Mail |"/>
+                <img src="../images/mail.svg" alt="Logo Mail |"/>
                 <p>Mail</p>
             </a>
             <a id="platform" target="_blank" href="CV.pdf">
-                <img src="images/CV.svg" alt="Mon CV"/>
+                <img src="../images/CV.svg" alt="Mon CV"/>
                 <p>Cv</p>
             </a>
         </div>
