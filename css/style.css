@@ -1,11 +1,11 @@
 /*Style générale*/
 /*Import Police*/
 @font-face {
-  font-family: "Mouldy Cheese";
-  src: url(../fonts/MouldyCheeseRegular-WyMWG.ttf);
+font-family: "Mouldy Cheese";
+src: url(../fonts/MouldyCheeseRegular-WyMWG.ttf);
 
-  font-family:"Century Gothic";
-  src:url(../fonts/centurygothic.ttf);
+font-family:"Century Gothic";
+src:url(../fonts/centurygothic.ttf);
 }
 
 :root {
