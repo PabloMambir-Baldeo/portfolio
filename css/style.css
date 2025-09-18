@@ -1,8 +1,5 @@
 /*Style générale*/
 /*Import Police*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @font-face {
   font-family: "Mouldy Cheese";
   src: url(../fonts/MouldyCheeseRegular-WyMWG.ttf);
