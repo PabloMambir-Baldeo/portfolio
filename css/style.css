@@ -5,8 +5,7 @@
   src: url(../fonts/MouldyCheeseRegular-WyMWG.ttf);
 
   font-family:"Century Gothic";
-  src:
-    url(../fonts/centurygothic.ttf);
+  src:url(../fonts/centurygothic.ttf);
 }
 
 :root {
@@ -96,7 +95,7 @@ main {
     font-weight: 400;
     line-height: normal;
 
-    color: black;
+    color: var(--Bold);
     text-decoration: none;
     text-align: center;
 
