@@ -114,6 +114,7 @@ main {
     align-content: flex-start;
     gap: 1.2rem 1rem;
     flex-wrap: wrap; 
+    justify-content: center;
 }
 
 #media-container * {

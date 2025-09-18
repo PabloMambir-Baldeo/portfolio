@@ -6,6 +6,28 @@
     align-items: flex-start;
 }
 
+.Titre-Accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titre.metier {
+    display: inline;
+}
+
+.titre {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit; 
+    font-size: inherit;
+    text-align: inherit;
+}
+
+.metier.titre :nth-child(-n+2)::after {
+    content: " | ";
+}
+
 #Txt {
     display: flex;
     width: 57.60%;
@@ -65,6 +87,16 @@
 }
 /*Pour version Mobile, mais plus tôt pour que ça paraisse pas trop bizarre*/
 @media screen and (max-width:768px ) /*Taille Tablette*/ {
+
+    .titre.metier {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .metier.titre *.titre::after {
+        content: "";
+    }
+}
     #accueil {
         flex-direction: column;
         align-items: center;
@@ -80,4 +112,9 @@
         width:48.88%
     }
 
+@media screen and (max-width:633px) {
+    .nom {
+        display: flex;
+        flex-direction: column;
+    }
 }

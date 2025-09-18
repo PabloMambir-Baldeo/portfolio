@@ -6,7 +6,12 @@
 @font-face {
   font-family: "Mouldy Cheese";
   src: url(../fonts/MouldyCheeseRegular-WyMWG.ttf);
+
+  font-family:"Century Gothic";
+  src:
+    url(../fonts/centurygothic.ttf);
 }
+
 :root {
     --secondary:#FFBE63;
     --Main: #6FBDD2;
@@ -19,7 +24,7 @@
 
 * {
     /*Police corp*/
-    font-family: "Caveat Brush";
+    font-family: "Century Gothic";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -68,7 +73,7 @@ main {
 }
 /*Gras*/
 .sous-titre {
-    font-family: "Caveat Brush";
+    font-family: "Century Gothic";
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -133,4 +138,3 @@ main {
         flex-direction: column;
     }
 }
-    
