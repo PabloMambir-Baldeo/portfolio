@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 101 101" style="enable-background:new 0 0 101 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFBE63;stroke:#0A2A33;stroke-width:3;}
+	.st2{fill:#6FBDD2;}
+	.st3{fill:#0A2A33;}
+</style>
+<g id="Cadre">
+	<path class="st0" d="M76.9,0.7H23.8C10.9,0.7,0.4,11.2,0.4,24.1v53.1c0,12.9,10.5,23.4,23.4,23.4h53.1c12.9,0,23.4-10.5,23.4-23.4
+		V24.1C100.4,11.2,89.9,0.7,76.9,0.7z"/>
+	<path class="st1" d="M25.6,6h47.8C84.2,6,93,14.8,93,25.6v47.8C93,84.2,84.2,93,73.4,93H25.6C14.8,93,6,84.2,6,73.4V25.6
+		C6,14.8,14.8,6,25.6,6z"/>
+</g>
+<g id="Logo">
+	<path id="Fond" class="st0" d="M73.9,25.6v-4.5H26.8v4.5h-4.7v8.9V39v4.5v8.9v8.9v16.9h4.7v4.5h47.1v-4.5h4.7V61.3v-8.9v-8.9V39
+		v-4.5v-8.9H73.9z M26.8,39h4.7v-4.5h9.4V39h4.7v4.5h-4.7V39h-9.4v4.5h-4.7V39z M73.9,43.5h-4.7V39h-9.4v4.5h-4.7V39h4.7v-4.5h9.4
+		V39h4.7V43.5z"/>
+	<polygon id="Shade" class="st2" points="73.9,65.8 73.9,70.3 26.8,70.3 26.8,65.8 22.1,65.8 22.1,70.3 22.1,74.7 26.8,74.7 
+		26.8,79.2 73.9,79.2 73.9,74.7 78.7,74.7 78.7,70.3 78.7,65.8 	"/>
+	<g id="Contour_00000031174525249989639300000009872888148540585374_">
+		<g>
+			<g>
+				<rect x="31.5" y="34.5" class="st3" width="9.4" height="4.5"/>
+				<rect x="26.8" y="39" class="st3" width="4.7" height="4.5"/>
+				<rect x="40.9" y="39" class="st3" width="4.7" height="4.5"/>
+			</g>
+			<g>
+				<rect x="59.8" y="34.5" class="st3" width="9.4" height="4.5"/>
+				<rect x="55.1" y="39" class="st3" width="4.7" height="4.5"/>
+				<rect x="69.2" y="39" class="st3" width="4.7" height="4.5"/>
+			</g>
+			<polygon class="st3" points="59.8,52.4 59.8,56.9 40.9,56.9 40.9,52.4 36.2,52.4 36.2,61.3 40.9,61.3 40.9,65.8 59.8,65.8 
+				59.8,61.3 64.5,61.3 64.5,52.4 			"/>
+		</g>
+		<g id="Contour">
+			<path class="st3" d="M73.9,16.7H26.8v4.5h47.1V16.7z"/>
+			<path class="st3" d="M17.4,25.6h4.7v49.1h-4.7V25.6z"/>
+			<path class="st3" d="M78.7,25.6h4.7v49.1h-4.7V25.6z"/>
+			<path class="st3" d="M22.1,74.7h4.7v4.5h-4.7V74.7z"/>
+			<path class="st3" d="M26.8,79.2h47.1v4.5H26.8V79.2z"/>
+			<path class="st3" d="M73.9,21.1h4.7v4.5h-4.7V21.1z"/>
+			<path class="st3" d="M22.1,21.1h4.7v4.5h-4.7V21.1z"/>
+			<path class="st3" d="M73.9,74.7h4.7v4.5h-4.7V74.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
